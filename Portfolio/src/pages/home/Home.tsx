@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from './Home.module.scss';
 
+import Image from '../../components/media/image';
+
 const Home: React.FC = () => {
+  const logoSource = 'resources/media/logo/sfx-stjuice_site.png';
   return (
     <div className={styles.home}>
-      <header className={styles.header}>
-        <h1>Welcome to My SFX Makeup Portfolio</h1>
-        <p>Explore the world of special effects makeup and discover the art of transformation.</p>
+      <header className={styles.logo}>
+        <Image src={logoSource} alt='logo for special effects website' />
       </header>
 
       <section className={styles.showcase}>
