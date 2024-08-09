@@ -1,0 +1,31 @@
+.home {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+    width: 75%; // TODO: adjust image
+    z-index: 1;
+}
+
+.mainImage {
+    float: right;
+}
+
+.mainImage img {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    /* Adjusts image without distorting aspect ratio */
+    margin: auto;
+    display: block;
+}
