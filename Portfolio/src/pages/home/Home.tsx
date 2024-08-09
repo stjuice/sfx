@@ -9,8 +9,8 @@ const Home: React.FC = () => {
 
   return (
     <div className={styles.home}>
-      <header className={styles.logo}>
-        <Image src={logoSource} alt='logo for special effects website' />
+      <header className={styles.header}>
+        <Image src={logoSource} alt='logo for special effects website' className={styles.logo}/>
       </header>
 
       <div className={styles.mainImage}>
