@@ -1,6 +1,6 @@
 import { Reducer } from 'redux';
 import { TextAction, TEXTS_REQUESTED } from './actions';
-import textsData from '../../context/Texts.json';
+import textsData from '../../resources/Texts.json';
 
 interface TextState {
   [key: string]: string
