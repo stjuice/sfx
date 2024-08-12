@@ -1,7 +1,7 @@
 import { ReactNode, useMemo, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import TextsContext from './TextsContext';
-import { loadTexts } from '../../behavior/texts/actions';
+import { loadTexts } from 'behavior/texts/actions';
 
 type Props = {
   children: ReactNode;
