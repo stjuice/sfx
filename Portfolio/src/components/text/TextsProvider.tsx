@@ -21,7 +21,6 @@ const TextsProvider = ({ children }: Props) => {
         keysToRequest.push(key);
         requestedKeys.add(key);
       }
-      console.log('keysToRequest', keysToRequest);
   
       if (keysToRequest.length) dispatch(loadTexts(keysToRequest));
     }
