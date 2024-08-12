@@ -21,11 +21,7 @@ const Text = ({ textKey, className }: Text) => {
   }, [dispatch, textKey]);
 
 
-  return (
-    <p className={className}>
-      {textValue}
-    </p>
-  );
+  return <p className={className}>{textValue}</p>;
 };
 
 export default Text;
