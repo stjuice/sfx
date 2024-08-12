@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Home.module.scss';
 
-import Image from '../../components/media/image';
-import Text from '../../components/text';
+import Image from 'components/media/image';
+import Text from 'components/text';
 
 const Home: React.FC = () => {
   const logoSource = 'resources/media/logo/sfx-stjuice_site.png';

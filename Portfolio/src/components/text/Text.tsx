@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import store, { RootState } from '../../store';
-import { loadTexts } from '../../behavior/texts/actions';
+
+import type { RootState } from 'behavior/rootReducer';
+
+import { loadTexts } from 'behavior/texts/actions';
 
 type Text = {
   textKey: string;
   className?: string;
-};
-
-type TextState = {
-  [key: string]: string;
 };
 
 const Text = ({ textKey, className }: Text) => {

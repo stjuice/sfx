@@ -1,12 +1,9 @@
+import type { TextDataType, TextState } from './types';
+import { TEXTS_REQUESTED, type TextAction } from './actions';
 import textsReducer from './reducer';
-import { TEXTS_REQUESTED, TextAction } from './actions';
-import textsData from '../../resources/Texts.json';
+import textsData from 'resources/Texts.json';
 
-interface TextState {
-  [key: string]: string
-}
-
-const textsDataTyped: { [key: string]: string } = textsData;
+const textsDataTyped: TextDataType = textsData;
 
 const initialState: TextState = {};
 

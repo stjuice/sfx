@@ -1,12 +1,7 @@
-import { combineReducers, configureStore, createStore } from '@reduxjs/toolkit'
-import textsReducer from './behavior/texts/reducer'
-
-const rootReducer = combineReducers({
-  texts: textsReducer,
-});
+import { createStore } from '@reduxjs/toolkit'
+import { rootReducer } from 'behavior/rootReducer';
 
 const store = createStore(rootReducer);
 
-export type RootState = ReturnType<typeof rootReducer>;
 
-export default store
+export default store;
