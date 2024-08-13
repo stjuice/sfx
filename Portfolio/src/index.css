@@ -3,7 +3,7 @@ body {
   margin: 0;
 
   color: #e4e2dd;
-  font-family: Impact;
+  font-family: 'impact';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,7 +15,14 @@ code {
 
 @font-face {
   font-family: 'impact';
-  src: url('./resources/fonts/impact.ttf') format('ttf');
+  src: url('./resources/fonts/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geometria';
+  src: url('./resources/fonts/Geometria-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
