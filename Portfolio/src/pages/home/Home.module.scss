@@ -56,3 +56,50 @@
   grid-row-end: 4;
   grid-column-end: 4;
 }
+
+.backgroundSection {
+  grid-row-start: 3; /* Adjust this based on where you want the background section to start */
+  grid-column-start: 1;
+  grid-row-end: 8; /* Span across more rows to extend the background */
+  grid-column-end: 8; /* Span across all columns */
+
+  background-image: url('../../resources/media/elements/home-lights.png'); // Your background image
+
+  background-size: cover; /* Cover the entire section */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  /* Optional: To control height or padding */
+  min-height: 400px; /* Adjust this as necessary */
+  padding: 20px;
+
+  z-index: 0;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.30); /* Semi-transparent background to make text readable */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  width: 45%; /* Adjust width based on layout */
+  margin: 10px;
+  text-align: center;
+  
+  color: white; /* Text color */
+  font-family: 'geometria', sans-serif; /* Ensure the font matches your design */
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Adjust for desired heading size */
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1rem; /* Adjust for desired paragraph size */
+    line-height: 1.5;
+  }
+}
