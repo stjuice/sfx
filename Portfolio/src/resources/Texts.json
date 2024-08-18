@@ -3,5 +3,14 @@
     "Hello": "Hi, I'm {0}!",
     "Name": "Viktoriia (stjuice)",
     "PortfolioTitle": "I specialize in special effects makeup",
-    "PortfolioDescription": "My portfolio showcases a diverse range of SFX makeup styles, from the simplest changes to the most complex designs."
+    "PortfolioDescription": "My portfolio showcases a diverse range of SFX makeup styles, from the simplest changes to the most complex designs.",
+
+    "Personalized": "Personalized SFX Makeup",
+    "PersonalizedDescription": "Each project is aimed to meet your specific requirements",
+    "Professional": "Professional Expertise",
+    "ProfessionalDescription": "With years of experience, I deliver top-notch results every time",
+    "Quality": "High-Quality Materials",
+    "QualityDescription": "I use only the best materials to ensure a safe and lasting transformation",
+    "Unique": "Personalized SFX Makeup",
+    "UniqueDescription": "I create custom, one-of-a-kind looks just for you, ensuring your transformation is unique and memorable"
 }
