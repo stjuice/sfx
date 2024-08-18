@@ -71,7 +71,7 @@
   position: relative;
   
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   
   /* Optional: To control height or padding */
@@ -81,6 +81,14 @@
   z-index: 0;
 }
 
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
 .card {
   background-color: rgba(0, 0, 0, 0.30); /* Semi-transparent background to make text readable */
   border-radius: 15px; /* Rounded corners */
@@ -88,6 +96,8 @@
   width: 45%; /* Adjust width based on layout */
   margin: 10px;
   text-align: center;
+
+  height: 150px;
   
   color: white; /* Text color */
   font-family: 'geometria', sans-serif; /* Ensure the font matches your design */

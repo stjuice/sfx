@@ -25,7 +25,12 @@ const Home: React.FC = () => {
         <GreetingMessage />
       </div>
       <div className={styles.backgroundSection}>
-        <Card titleKey={T.PERSONALIZED} contentKeys={T.PERSONALIZED_DESCRIPTION} />
+        <div className={styles.cardsContainer}>
+          <Card titleKey={T.PERSONALIZED} contentKeys={T.PERSONALIZED_DESCRIPTION} />
+          <Card titleKey={T.PROFESSIONAL} contentKeys={T.PROFESSIONAL_DESCRIPTION} />
+          <Card titleKey={T.QUALITY} contentKeys={T.QUALITY_DESCRIPTION} />
+          <Card titleKey={T.UNIQUE} contentKeys={T.UNIQUE_DESCRIPTION} />
+        </div>
       </div>
     </div>
   );
