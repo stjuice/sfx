@@ -5,6 +5,8 @@ import Image from 'components/media/image';
 import { GreetingMessage } from 'components/text/greetingMessage';
 import Card from './Card';
 import { textKeys as T } from 'components/text'
+import ImageSlider from './ImageSlider';
+import TextBlock from 'components/text/textBlock/TextBlock';
 
 const Home: React.FC = () => {
   const logoSource = 'resources/media/logo/sfx-stjuice_site.svg';
@@ -31,6 +33,13 @@ const Home: React.FC = () => {
           <Card titleKey={T.QUALITY} contentKeys={T.QUALITY_DESCRIPTION} />
           <Card titleKey={T.UNIQUE} contentKeys={T.UNIQUE_DESCRIPTION} />
         </div>
+      </div>
+      <div className={styles.explenation}>
+        <TextBlock textKeys={[T.SFXEXPLENAION]} className={styles.header} />
+        <TextBlock textKeys={[T.SFXEXPLENAION_DESCRIPTION]} className={styles.description} />
+      </div>
+      <div className={styles.examples}>
+        <ImageSlider />
       </div>
     </div>
   );

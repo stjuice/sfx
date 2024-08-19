@@ -8,9 +8,10 @@ import Text from '../Text';
 type TextBlockType = {
   textKeys: string[];
   valueKeys?: string[];
+  className?: string;
 };
 
-const TextBlock = ({ textKeys, valueKeys = [] }: TextBlockType) => {
+const TextBlock = ({ textKeys, valueKeys = [], className='' }: TextBlockType) => {
   const dispatch = useDispatch();
   const texts = useSelector((state: RootState) => state.texts);
 
@@ -33,7 +34,7 @@ const TextBlock = ({ textKeys, valueKeys = [] }: TextBlockType) => {
   return (
     <>
       {textKeys.map((key) => (
-        <Text key={key} textValue={getText(key)} className={styles[key] || ''} />
+        <Text key={key} textValue={getText(key)} className={className || styles[key]} />
       ))}
     </>
   );

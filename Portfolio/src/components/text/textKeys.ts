@@ -12,5 +12,8 @@ export default {
   QUALITY: "Quality",
   QUALITY_DESCRIPTION: "QualityDescription",
   UNIQUE: "Unique",
-  UNIQUE_DESCRIPTION: "UniqueDescription"
+  UNIQUE_DESCRIPTION: "UniqueDescription",
+
+  SFXEXPLENAION: "SfxExplenation",
+  SFXEXPLENAION_DESCRIPTION: "SfxExplenationDescription",
 }
