@@ -96,34 +96,17 @@
 
 .card {
   background-color: rgba(0, 0, 0, 0.30);
-  /* Semi-transparent background to make text readable */
   border-radius: 15px;
-  /* Rounded corners */
   padding: 20px;
   width: 45%;
-  /* Adjust width based on layout */
   margin: 10px;
   text-align: center;
 
   height: 150px;
+  width: 500px;
 
   color: white;
-  /* Text color */
   font-family: 'geometria', sans-serif;
-  /* Ensure the font matches your design */
-
-  h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    /* Adjust for desired heading size */
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 1rem;
-    /* Adjust for desired paragraph size */
-    line-height: 1.5;
-  }
 }
 
 .explenation {
