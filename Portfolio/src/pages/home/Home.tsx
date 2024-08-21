@@ -43,6 +43,7 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.categories}>
         <TextBlock textKeys={[T.CATEGORIES]} className={styles.header} />
+        <TextBlock textKeys={[T.CATEGORIES_EFFECTS]} className={styles.description} />
         <TextBlock textKeys={[T.CATEGORIES_DESCRIPTION]} className={styles.description} />
       </div>
     </div>

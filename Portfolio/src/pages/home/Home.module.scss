@@ -1,8 +1,10 @@
 .home {
   display: grid;
 
-  grid-template-rows: repeat(20, minmax(350px, 10vw)); /* Each row's height scales with the viewport width, minimum 50px */
-  grid-template-columns: repeat(7, minmax(200px, 14.28vw)); /* Each column's width scales with the viewport width, minimum 100px */
+  grid-template-rows: repeat(20, minmax(350px, 10vw));
+  /* Each row's height scales with the viewport width, minimum 50px */
+  grid-template-columns: repeat(7, minmax(200px, 14.28vw));
+  /* Each column's width scales with the viewport width, minimum 100px */
 
   gap: 0px;
   height: auto;
@@ -135,7 +137,7 @@
 // image slider
 .examples {
   grid-row-start: 8;
-  grid-row-end: 11;
+  grid-row-end: 9;
   grid-column-start: 1;
   grid-column-end: 8;
 }
@@ -175,8 +177,8 @@
 
 //
 .categories {
-  grid-row-start: 9;
-  grid-row-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 10;
 
   grid-column-start: 1;
   grid-column-end: 4;
@@ -184,11 +186,15 @@
   margin-left: 10%;
 
   .header {
-    font-size: 100px;
+    margin: 0;
+    font-size: 150px;
     color: #cb53bb;
   }
 
   .description {
     font-family: 'geometria';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: large;
   }
 }
