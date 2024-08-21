@@ -15,8 +15,8 @@ const action = {
 describe('Texts reducer', () => {
   it('should handle' + TEXTS_REQUESTED, () => {
     const expectedState: TextState = {
-      key1: textsDataTyped.key1,
-      key2: textsDataTyped.key2
+      key1: textsDataTyped.key1 as string,
+      key2: textsDataTyped.key2 as string
     };
 
     expect(textsReducer(initialState, action)).toEqual(expectedState);
@@ -35,7 +35,7 @@ describe('Texts reducer', () => {
     const initialStateWithText: TextState = { existingKey: 'existingValue' };
     const expectedState: TextState = {
       existingKey: 'existingValue',
-      key1: textsDataTyped.key1
+      key1: textsDataTyped.key1 as string
     };
 
     const actionWithMerge: TextAction = {

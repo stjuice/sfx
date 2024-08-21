@@ -22,11 +22,8 @@ const TextBlock = ({ textKeys, valueKeys = [], className='' }: TextBlockType) =>
   const getText = (textKey: string) => {
     let text = texts[textKey] || '';
 
-    valueKeys.forEach((key, index) => {
-      const value = texts[key] || '';      
-      const placeholder = new RegExp(`\\{${index}\\}`, 'g');
-      text = text.replace(placeholder, value);
-    });
+    // Replace placeholders with values
+    text = replacePlaceholders(text, valueKeys.map(key => texts[key] || ''));
 
     return text;
   };
@@ -34,10 +31,17 @@ const TextBlock = ({ textKeys, valueKeys = [], className='' }: TextBlockType) =>
   return (
     <>
       {textKeys.map((key) => (
-        <Text key={key} textValue={getText(key)} className={className || styles[key]} />
+        <Text key={key} textValue={getText(key)} className={className || styles[key] || ''} />
       ))}
     </>
   );
 };
 
 export default TextBlock;
+
+const replacePlaceholders = (text: string, values: string[]): string => {
+  return text.replace(/\{(\d+)\}/g, (match, index) => {
+    const value = values[parseInt(index, 10)] || '';
+    return value;
+  });
+};

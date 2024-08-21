@@ -41,6 +41,10 @@ const Home: React.FC = () => {
       <div className={styles.examples}>
         <ImageSlider />
       </div>
+      <div className={styles.categories}>
+        <TextBlock textKeys={[T.CATEGORIES]} className={styles.header} />
+        <TextBlock textKeys={[T.CATEGORIES_DESCRIPTION]} />
+      </div>
     </div>
   );
 }

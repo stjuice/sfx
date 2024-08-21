@@ -16,4 +16,7 @@ export default {
 
   SFXEXPLENAION: "SfxExplenation",
   SFXEXPLENAION_DESCRIPTION: "SfxExplenationDescription",
+
+  CATEGORIES: "Categories",
+  CATEGORIES_DESCRIPTION: "CategoriesDescription",
 }
