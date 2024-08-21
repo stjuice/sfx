@@ -43,7 +43,7 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.categories}>
         <TextBlock textKeys={[T.CATEGORIES]} className={styles.header} />
-        <TextBlock textKeys={[T.CATEGORIES_DESCRIPTION]} />
+        <TextBlock textKeys={[T.CATEGORIES_DESCRIPTION]} className={styles.description} />
       </div>
     </div>
   );

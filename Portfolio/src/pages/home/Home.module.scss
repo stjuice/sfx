@@ -1,11 +1,11 @@
 .home {
   display: grid;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(20, minmax(350px, 10vw)); /* Each row's height scales with the viewport width, minimum 50px */
+  grid-template-columns: repeat(7, minmax(200px, 14.28vw)); /* Each column's width scales with the viewport width, minimum 100px */
 
   gap: 0px;
-  height: 100%;
+  height: auto;
 }
 
 .logo {
@@ -19,7 +19,7 @@
   grid-column-end: 5;
 
   img {
-    width: 115%;
+    width: 130%;
   }
 }
 
@@ -27,7 +27,7 @@
   grid-row-start: 1;
   grid-column-start: 5;
 
-  grid-row-end: 5;
+  grid-row-end: 3;
   grid-column-end: 8;
 
   z-index: 1;
@@ -175,16 +175,20 @@
 
 //
 .categories {
-  grid-row-start: 10;
-  grid-row-end: 10;
+  grid-row-start: 9;
+  grid-row-end: 9;
 
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 4;
 
-  margin-left: 3%;
+  margin-left: 10%;
 
   .header {
-    font-size: 70px;
+    font-size: 100px;
     color: #cb53bb;
+  }
+
+  .description {
+    font-family: 'geometria';
   }
 }
