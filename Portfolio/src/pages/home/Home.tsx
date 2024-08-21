@@ -7,6 +7,7 @@ import Card from './Card';
 import { textKeys as T } from 'components/text'
 import ImageSlider from './ImageSlider';
 import TextBlock from 'components/text/textBlock/TextBlock';
+import ImageStack from './ImageStack';
 
 const Home: React.FC = () => {
   const logoSource = 'resources/media/logo/sfx-stjuice_site.svg';
@@ -41,12 +42,15 @@ const Home: React.FC = () => {
       <div className={styles.examples}>
         <ImageSlider />
       </div>
-      <div className={styles.categories}>
+      <div className={styles.catText}>
         <TextBlock textKeys={[T.CATEGORIES]} className={styles.header} />
         <TextBlock textKeys={[T.CATEGORIES_EFFECTS]} className={styles.description} />
         <TextBlock textKeys={[T.CATEGORIES_DESCRIPTION]} className={styles.description} />
       </div>
-    </div>
+      <div className={styles.catImages}>
+        <ImageStack />
+      </div>
+    </div >
   );
 }
 
