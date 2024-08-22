@@ -20,4 +20,8 @@ export default {
   CATEGORIES: "Categories",
   CATEGORIES_EFFECTS: "CategoriesEffects",
   CATEGORIES_DESCRIPTION: "CategoriesDescription",
+
+  CONTACT_ME: "ContactMe",
+  EMAIL: "Email",
+  INSTA: "Insta",
 }

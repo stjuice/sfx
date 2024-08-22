@@ -6,6 +6,7 @@ body {
   font-family: 'impact';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
 }
 
 code {
