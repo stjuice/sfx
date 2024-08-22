@@ -2,9 +2,7 @@
   display: grid;
 
   grid-template-rows: repeat(20, minmax(350px, 10vw));
-  /* Each row's height scales with the viewport width, minimum 50px */
   grid-template-columns: repeat(7, minmax(200px, 14.28vw));
-  /* Each column's width scales with the viewport width, minimum 100px */
 
   gap: 0px;
   height: auto;
@@ -61,17 +59,13 @@
 
 .backgroundSection {
   grid-row-start: 3;
-  /* Adjust this based on where you want the background section to start */
   grid-column-start: 1;
   grid-row-end: 8;
-  /* Span across more rows to extend the background */
   grid-column-end: 8;
-  /* Span across all columns */
 
-  background-image: url('../../resources/media/elements/home-lights.png'); // Your background image
+  background-image: url('../../resources/media/elements/home-lights.png');
 
   background-size: cover;
-  /* Cover the entire section */
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -80,9 +74,7 @@
   justify-content: center;
   align-items: center;
 
-  /* Optional: To control height or padding */
   min-height: 400px;
-  /* Adjust this as necessary */
   padding: 20px;
 
   z-index: 0;
