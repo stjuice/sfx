@@ -21,11 +21,8 @@ const TextBlock = ({ textKeys, valueKeys = [], className='' }: TextBlockType) =>
 
   const getText = (textKey: string) => {
     let text = texts[textKey] || '';
-
-    // Replace placeholders with values
-    text = replacePlaceholders(text, valueKeys.map(key => texts[key] || ''));
-
-    return text;
+    
+    return replacePlaceholders(text, valueKeys.map(key => texts[key] || ''));;
   };
 
   return (
