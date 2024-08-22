@@ -1,38 +1,241 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-y: auto;
-    padding: 20px;
-    background-color: #000;
+  display: grid;
+
+  grid-template-rows: repeat(20, minmax(350px, 10vw));
+  grid-template-columns: repeat(7, minmax(200px, 14.28vw));
+
+  gap: 0px;
+  height: auto;
+}
+
+.logo {
+  margin: 7%;
+  z-index: 2;
+
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 5;
+
+  img {
+    width: 130%;
   }
-  
+}
+
+.mainImage {
+  grid-row-start: 1;
+  grid-column-start: 5;
+
+  grid-row-end: 3;
+  grid-column-end: 8;
+
+  z-index: 1;
+}
+
+.girlImage {
+  grid-row-start: 3;
+  grid-column-start: 4;
+
+  grid-row-end: 5;
+  grid-column-end: 5;
+}
+
+.girlImage img {
+  margin: 30px;
+  object-fit: cover;
+  height: 400px;
+}
+
+.content {
+  margin-left: 10%;
+
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+
+.backgroundSection {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 8;
+  grid-column-end: 8;
+
+  background-image: url('../../resources/media/elements/home-lights.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+  padding: 20px;
+
+  z-index: 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.30);
+  border-radius: 15px;
+  padding: 20px;
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+
+  height: 150px;
+  width: 500px;
+
+  color: white;
+  font-family: 'geometria', sans-serif;
+}
+
+.explenation {
+  grid-row-start: 7;
+  grid-row-end: 7;
+
+  grid-column-start: 1;
+  grid-column-end: 8;
+
   .header {
-    display: flex;
-    align-items: center;
-    position: relative;
+    margin: 5% 5% 0 5%;
+    font-family: 'impact' !important;
+    font-size: xxx-large;
+    text-align: center;
+    color: #68cbf8;
   }
-  
-  .logo {
-    width: 50%;
-    z-index: 2;
+
+  .description {
+    margin: 1% 5% 5% 5%;
+    font-family: 'geometria' !important;
+    text-align: center;
+    font-size: xx-large;
   }
-  
-  .mainImage {
-    flex-grow: 1;
-    position: relative;
-  }
-  
-  .mainImage img {
-    max-width: 100%;
-    height: auto;
+}
+
+// image slider
+.examples {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.sliderTrack {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 20s linear infinite;
+}
+
+.sliderItem {
+  flex: 0 0 auto;
+  width: 16.66%;
+
+  img {
+    max-width: 350px;
     object-fit: cover;
   }
-  
-  .content {
-    margin-top: 20px;
-    color: white;
-    text-align: left;
-    z-index: 1;
-    position: relative;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+//
+.catText {
+  grid-row-start: 10;
+  grid-row-end: 11;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  margin-left: 10%;
+
+  .header {
+    margin: 0;
+    font-size: 150px;
+    color: #cb53bb;
+  }
+
+  .description {
+    font-family: 'geometria';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: large;
+  }
+}
+
+.catImages {
+  grid-row-start: 10;
+  grid-row-end: 11;
+
+  grid-column-start: 4;
+  grid-column-end: 7;
+
+  .imageStack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 200px;
+  }
+
+  .imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+    z-index: 1;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .imageContainer:hover {
+    z-index: 10;
+    transform: translateY(150px);
+  }
+
+  .imageCntainer-1 {
+    z-index: 3;
+  }
+
+  .imageContainer-2 {
+    z-index: 2;
+  }
+
+  .imageContainer-3 {
+    z-index: 1;
+  }
+}

@@ -1,3 +1,5 @@
-export type TextDataType = { [key: string]: string };
+export type TextDataType = { [key: string]: string | string[] };
 
-export type TextState = TextDataType;
+export interface TextState {
+    [key: string]: string;
+  }

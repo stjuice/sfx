@@ -8,11 +8,10 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "src/*": ["src/*"],
       "components/*": ["components/*"],
       "behavior/*": ["behavior/*"],
       "pages/*": ["pages/*"],
-      "resources/*": ["resources/*"]
+      "@resources/*": ["resources/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

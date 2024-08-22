@@ -8,9 +8,10 @@ import Text from '../Text';
 type TextBlockType = {
   textKeys: string[];
   valueKeys?: string[];
+  className?: string;
 };
 
-const TextBlock = ({ textKeys, valueKeys = [] }: TextBlockType) => {
+const TextBlock = ({ textKeys, valueKeys = [], className='' }: TextBlockType) => {
   const dispatch = useDispatch();
   const texts = useSelector((state: RootState) => state.texts);
 
@@ -20,23 +21,24 @@ const TextBlock = ({ textKeys, valueKeys = [] }: TextBlockType) => {
 
   const getText = (textKey: string) => {
     let text = texts[textKey] || '';
-
-    valueKeys.forEach((key, index) => {
-      const value = texts[key] || '';      
-      const placeholder = new RegExp(`\\{${index}\\}`, 'g');
-      text = text.replace(placeholder, value);
-    });
-
-    return text;
+    
+    return replacePlaceholders(text, valueKeys.map(key => texts[key] || ''));;
   };
 
   return (
     <>
       {textKeys.map((key) => (
-        <Text key={key} textValue={getText(key)} className={styles[key] || ''} />
+        <Text key={key} textValue={getText(key)} className={className || styles[key] || ''} />
       ))}
     </>
   );
 };
 
 export default TextBlock;
+
+const replacePlaceholders = (text: string, values: string[]): string => {
+  return text.replace(/\{(\d+)\}/g, (match, index) => {
+    const value = values[parseInt(index, 10)] || '';
+    return value;
+  });
+};
