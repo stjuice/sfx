@@ -24,10 +24,30 @@
     font-size: 100px;
     color: #cb53bb;
     margin-bottom: 0;
+    margin-top: 50px;
   }
 
   .description {
     font-family: 'geometria';
     text-align: center;
+  }
+}
+
+.images {
+  grid-row-start: 2;
+  grid-row-end: 5;
+
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  display: flex;
+  justify-self: center;
+  margin-top: 3%;
+
+  img {
+    max-width: 230px;
+    max-height: 700px;
+    object-fit: cover;
+
   }
 }
