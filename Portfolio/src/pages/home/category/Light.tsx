@@ -8,8 +8,8 @@ const CategoryLight = () => {
     <div className={styles.light}>
       <div className={styles.header}>
         <TextBlock textKeys={[T.LIGHT]} className={styles.title} />
+        <TextBlock textKeys={[T.LIGHT_DESCRIPTION]} className={styles.description} />
       </div>
-      <p>This is the Category Light page.</p>
     </div>
   );
 };
