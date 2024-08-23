@@ -27,5 +27,19 @@
 
     "ContactMe": "Contact Me",
     "Email": "E-mail",
-    "Insta": "Instagram"
+    "Insta": "Instagram",
+
+    "Light": "Light",
+    "LightDescription": "This section features small, simple, and easily achievable makeup effects, perfect for beginners or quick projects. These effects are often less time-consuming and require fewer materials",
+    "LightFeaturesBlood": "Fake Blood",
+    "LightFeaturesBloodDescription": "Fake Blood",
+    "LightFeaturesPaint": "Aqua Paint",
+    "LightFeaturesPaintDescription": "Aqua Paint",
+    "LightFeaturesdecoration": "decoration",
+    "LightFeaturesdecorationDescription": "decoration",
+    "LightFor": "Ideal for",
+    "LightForList": ["Kids", "beginners", "small projects"],
+    "LightForConclusion": "Anyone who looking for a fun and easy transformation",
+    "LightThemeExamples": "theme examples",
+    "LightThemeExamplesList": ["elf", "doll", "clown", "witch", "fairy", "sugar skull", "vampire bite marks"]
 }
