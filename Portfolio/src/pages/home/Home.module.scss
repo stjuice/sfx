@@ -193,27 +193,26 @@
 
 .catImages {
   grid-row-start: 10;
-  grid-row-end: 11;
+  grid-row-end: 12;
 
   grid-column-start: 4;
-  grid-column-end: 7;
+  grid-column-end: 8;
 
   .imageStack {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin-top: 200px;
   }
 
   .imageContainer {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease-in-out, z-index 0.3s;
     z-index: 1;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
   }
 
   .imageContainer img {
@@ -224,19 +223,32 @@
 
   .imageContainer:hover {
     z-index: 10;
-    transform: translateY(150px);
   }
 
-  .imageCntainer-1 {
-    z-index: 3;
+  .imageContainer-1:hover {
+    transform: translateY(0);
+  }
+
+  .imageContainer-1 {
+    z-index: 1;
+  }
+
+  .imageContainer-2:hover {
+    transform: translateY(-100px);
   }
 
   .imageContainer-2 {
+    top: 30%;
     z-index: 2;
   }
 
+  .imageContainer-3:hover {
+    transform: translateY(-150px);
+  }
+
   .imageContainer-3 {
-    z-index: 1;
+    top: 60%;
+    z-index: 3;
   }
 }
 
