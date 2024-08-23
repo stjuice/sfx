@@ -13,23 +13,37 @@ const ContactMe = () => {
         <div className={styles.subHeaders}>
           <div className={styles.email}>
             <TextBlock textKeys={[T.EMAIL]} className={styles.subHeader} />
-            <Link href="mailto:your-email@example.com">
+            <Link href="mailto:stbluejuice@gmail.com">
               <span style={{ color: '#cb53bb', fontSize: '30px' }}>STBLUEJUICE</span>
-              <span style={{fontSize: '30px' }}>@GMAIL.COM</span>
+              <span style={{ fontSize: '30px' }}>@GMAIL.COM</span>
             </Link>
           </div>
           <div className={styles.insta}>
             <TextBlock textKeys={[T.INSTA]} className={styles.subHeader} />
-            <Link href="https://www.instagram.com/your-instagram-handle">
-              <span style={{fontSize: '30px' }}>@</span>
+            <Link href="https://www.instagram.com/stbluejuice">
+              <span style={{ fontSize: '30px' }}>@</span>
               <span style={{ color: '#cb53bb', fontSize: '30px' }}>STBLUEJUICE</span>
             </Link>
           </div>
         </div>
       </div >
       <div className={styles.videoContainer}>
-        <Video src="path_to_video_1.mp4" className={`${styles.video} ${styles.roundedVideo}`} controls />
-        <Video src="path_to_video_2.mp4" className={styles.video} controls />
+        <Video
+          src="resources/media/videos/mutant.mp4"
+          className={`${styles.video} ${styles.roundedVideo}`}
+          controls={false}
+          autoPlay={true}
+          loop
+          muted
+        />
+        <Video
+          src="resources/media/videos/icona.mp4"
+          className={`${styles.video} ${styles.recVideo}`}
+          controls={false}
+          autoPlay={true}
+          loop
+          muted
+        />
       </div>
     </>
   );

@@ -278,13 +278,33 @@
     gap: 20px;
 
     .video {
-      width: 300px;
-      height: 200px;
       object-fit: cover;
+      overflow: hidden;
+    }
+
+    .recVideo {
+      height: 700px;
+      width: 400px;
+      margin-top: 25%;
+
+      z-index: 1;
     }
 
     .roundedVideo {
-      border-radius: 100px 0 0 100px;
+      margin-right: -10%;
+      margin-left: 10%;
+      margin-top: 50%;
+
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 200px 200px 0 0;
+
+      border-width: medium;
+      border-color: #cb53bb;
+      border-style: solid;
+
+      z-index: 2;
     }
   }
 }
