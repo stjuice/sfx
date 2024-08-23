@@ -8,6 +8,7 @@ import { textKeys as T } from 'components/text'
 import ImageSlider from './ImageSlider';
 import TextBlock from 'components/text/textBlock/TextBlock';
 import ImageStack from './ImageStack';
+import ContactMe from './ContactMe';
 
 const Home: React.FC = () => {
   const logoSource = 'resources/media/logo/sfx-stjuice_site.svg';
@@ -49,6 +50,9 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.catImages}>
         <ImageStack />
+      </div>
+      <div className={styles.contactMe}>
+        <ContactMe />
       </div>
     </div >
   );

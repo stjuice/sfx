@@ -15,6 +15,7 @@
     "SfxExplenation": "SFX makeup, or special effects makeup",
     "SfxExplenationDescription": "the use of various techniques and materials such as silicone prosthetics, special cosmetics and other different tools to create an incredible transformations",
     "Categories": "Categories",
+    
     "CategoriesEffects": [
         "Discover the range of special effects makeup services I offer, designed to meet various needs and occasions.",
         "From light, quick effects perfect for casual events to epic, detailed transformations for professional settings, there's something for everyone."
@@ -22,5 +23,9 @@
     "CategoriesDescription": [
         "Each category promises a unique and personalized experience, ensuring your transformation is one-of-a-kind and tailored specifically for you. ",
         "Explore each category to find the perfect look for your next event or project."
-    ]
+    ],
+
+    "ContactMe": "Contact Me",
+    "Email": "E-mail",
+    "Insta": "Instagram"
 }
