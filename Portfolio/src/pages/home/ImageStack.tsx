@@ -7,7 +7,7 @@ const ImageStack = () => {
     'resources/media/images/stack/2.png',
     'resources/media/images/stack/3.png',
   ];
-  
+
   return (
     <div className={styles.imageStack}>
       {images.map((imageSource, index) => (
