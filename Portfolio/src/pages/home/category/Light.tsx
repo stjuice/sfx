@@ -17,14 +17,22 @@ const imagesGroup2 = [
 ];
 
 const CategoryLight = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  // Handle scroll event
-  const handleScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
+  const [group2MarginTop, setGroup2MarginTop] = useState('-700px');
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      const threshold = windowHeight * 0.3;
+
+      if (scrollPosition > threshold) {
+        setGroup2MarginTop('0');
+      } else {
+        setGroup2MarginTop(`-${700 - Math.min(scrollPosition, 700)}px`);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -32,20 +40,13 @@ const CategoryLight = () => {
     };
   }, []);
 
-  const getImageClass = (group: number) => {
-    if (scrollPosition > 100) { // Example threshold, adjust as needed
-      return group === 1 ? styles.shrinkUp : styles.shrinkDown;
-    }
-    return group === 1 ? styles.group1 : styles.group2;
-  };
-
   return (
     <div className={styles.light}>
       <div className={styles.header}>
         <TextBlock textKeys={[T.LIGHT]} className={styles.title} />
         <TextBlock textKeys={[T.LIGHT_DESCRIPTION]} className={styles.description} />
       </div>
-      <div className={getImageClass(1)}>
+      <div className={styles.group1}>
         {imagesGroup1.map((src, index) => (
           <Image
             key={index}
@@ -91,7 +92,7 @@ const CategoryLight = () => {
           <TextBlock textKeys={[T.LIGHT_THEME_EXAMPLES_LIST]} />
         </div>
       </div>
-      <div className={getImageClass(2)}>
+      <div className={styles.group2} style={{ marginTop: group2MarginTop }}>
         {imagesGroup2.map((src, index) => (
           <Image
             key={index + 3}
