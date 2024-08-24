@@ -29,7 +29,7 @@ const CategoryLight = () => {
       if (scrollPosition > threshold) {
         setGroup2MarginTop('0');
       } else {
-        setGroup2MarginTop(`-${700 - Math.min(scrollPosition, 700)}px`);
+        setGroup2MarginTop('-700px');
       }
     };
 
@@ -57,8 +57,8 @@ const CategoryLight = () => {
         ))}
       </div>
       <div className={styles.containerFeatures}>
+        <TextBlock textKeys={[T.LIGHT_FEATURES]} className={styles.sectionHeader} />
         <div className={styles.card}>
-          <TextBlock textKeys={[T.LIGHT_FEATURES]} className={styles.sectionHeader} />
           <div className={styles.features}>
             <div className={styles.feature}>
               <TextBlock textKeys={[T.LIGHT_FEATURES_BLOOD, T.SYMBOL_COLON]} className={styles.title} />
@@ -76,8 +76,8 @@ const CategoryLight = () => {
         </div>
       </div>
       <div className={styles.containerFor}>
+        <TextBlock textKeys={[T.LIGHT_FOR]} className={styles.sectionHeader} />
         <div className={`${styles.card} ${styles.cardFor}`}>
-          <TextBlock textKeys={[T.LIGHT_FOR]} className={styles.sectionHeader} />
           <div className={styles.for}>
             <TextBlock textKeys={[T.LIGHT_FOR_LIST]} className={styles.list} />
           </div>
