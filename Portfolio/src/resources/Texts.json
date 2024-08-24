@@ -1,6 +1,6 @@
 {
     "SymbolColon": ":",
-    
+
     "WelcomeTitle": "Welcome to SFX by st juice",
     "Hello": "Hi, I'm {0}!",
     "Name": "Viktoriia (stjuice)",
@@ -41,8 +41,8 @@
     "LightFeaturesdecoration": "decoration",
     "LightFeaturesdecorationDescription": "small ornaments are glued on the face/neck",
     "LightFor": "Ideal for",
-    "LightForList": ["Kids", "beginners", "small projects"],
+    "LightForList": ["Kids ⨀ ", "beginners ⨀ ", "small projects"],
     "LightForConclusion": "Anyone who looking for a fun and easy transformation",
     "LightThemeExamples": "theme examples",
-    "LightThemeExamplesList": ["elf", "doll", "clown", "witch", "fairy", "sugar skull", "vampire bite marks"]
+    "LightThemeExamplesList": ["elf ⨀ ", "doll ⨀ ", "clown ⨀ ", "witch ⨀ ", "fairy ⨀ ", "sugar skull ⨀ ", "vampire bite marks"]
 }

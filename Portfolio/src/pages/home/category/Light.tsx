@@ -57,9 +57,9 @@ const CategoryLight = () => {
       </div>
       <div className={styles.containerFeatures}>
         <div className={styles.card}>
-          <TextBlock textKeys={[T.LIGHT_FEATURES]} />
+          <TextBlock textKeys={[T.LIGHT_FEATURES]} className={styles.sectionHeader} />
           <div className={styles.features}>
-            <div className={styles.feature}>D
+            <div className={styles.feature}>
               <TextBlock textKeys={[T.LIGHT_FEATURES_BLOOD, T.SYMBOL_COLON]} className={styles.title} />
               <TextBlock textKeys={[T.LIGHT_FEATURES_BLOOD_DESCRIPTION]} className={styles.description} />
             </div>
@@ -76,13 +76,19 @@ const CategoryLight = () => {
       </div>
       <div className={styles.containerFor}>
         <div className={`${styles.card} ${styles.cardFor}`}>
-          <TextBlock textKeys={[T.LIGHT_FOR]} className={styles.for} />
+          <TextBlock textKeys={[T.LIGHT_FOR]} className={styles.sectionHeader} />
           <div className={styles.for}>
             <TextBlock textKeys={[T.LIGHT_FOR_LIST]} className={styles.list} />
           </div>
           <div className={styles.for}>
             <TextBlock textKeys={[T.LIGHT_FOR_CONCLUSION]} className={styles.conclusion} />
           </div>
+        </div>
+      </div>
+      <div className={styles.examples}>
+        <TextBlock textKeys={[T.LIGHT_THEME_EXAMPLES]} className={styles.sectionHeader} />
+        <div className={styles.examplesList}>
+          <TextBlock textKeys={[T.LIGHT_THEME_EXAMPLES_LIST]} />
         </div>
       </div>
       <div className={getImageClass(2)}>
