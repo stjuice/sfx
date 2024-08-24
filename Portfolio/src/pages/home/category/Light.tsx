@@ -55,11 +55,11 @@ const CategoryLight = () => {
           />
         ))}
       </div>
-      <div className={styles.cardsContainer}>
+      <div className={styles.containerFeatures}>
         <div className={styles.card}>
           <TextBlock textKeys={[T.LIGHT_FEATURES]} />
           <div className={styles.features}>
-            <div className={styles.feature}>
+            <div className={styles.feature}>D
               <TextBlock textKeys={[T.LIGHT_FEATURES_BLOOD, T.SYMBOL_COLON]} className={styles.title} />
               <TextBlock textKeys={[T.LIGHT_FEATURES_BLOOD_DESCRIPTION]} className={styles.description} />
             </div>
@@ -74,6 +74,17 @@ const CategoryLight = () => {
           </div>
         </div>
       </div>
+      <div className={styles.containerFor}>
+        <div className={`${styles.card} ${styles.cardFor}`}>
+          <TextBlock textKeys={[T.LIGHT_FOR]} className={styles.for} />
+          <div className={styles.for}>
+            <TextBlock textKeys={[T.LIGHT_FOR_LIST]} className={styles.list} />
+          </div>
+          <div className={styles.for}>
+            <TextBlock textKeys={[T.LIGHT_FOR_CONCLUSION]} className={styles.conclusion} />
+          </div>
+        </div>
+      </div>
       <div className={getImageClass(2)}>
         {imagesGroup2.map((src, index) => (
           <Image
@@ -84,7 +95,7 @@ const CategoryLight = () => {
           />
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 
