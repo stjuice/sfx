@@ -1,11 +1,22 @@
 .light {
   display: grid;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 300px);
+  grid-template-columns: repeat(6, 235px);
 
   gap: 0px;
   height: 100%;
+
+  background-image: url('../../../resources/media/elements/home-lights.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 400px;
+  padding: 20px;
+
+  z-index: 0;
 }
 
 .header {
@@ -20,7 +31,7 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  
+
   .title {
     font-size: 100px;
     color: #cb53bb;
@@ -34,11 +45,19 @@
   }
 }
 
+.group1, .group2 {
+  img {
+    object-fit: cover;
+    max-width: 230px;
+    max-height: 700px;
+  }  
+}
+
 .group1 {
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
 
   margin-left: 35px;
   max-width: 230px;
@@ -77,12 +96,13 @@
   max-height: 300px;
   max-height: 700px;
   object-fit: cover;
-  margin-left: 35px;
 
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+
+  margin-left: 100px;
 
   display: flex;
 }
@@ -95,7 +115,7 @@
 
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 2;
+  grid-column-start: 4;
   grid-column-end: 7;
 
   display: flex;
@@ -107,11 +127,10 @@ img {
   max-height: 700px;
 }
 
-
-.cardsContainer{
+.cardsContainer {
   grid-row-start: 2;
   grid-row-end: 4;
-  grid-column-start: 2;
+  grid-column-start: 4;
   grid-column-end: 7;
   margin-left: 10%;
 }
@@ -123,7 +142,6 @@ img {
   width: 45%;
   margin: 10px;
 
-  height: 250px;
   width: 500px;
 
   color: white;
@@ -132,7 +150,7 @@ img {
 
 .feature {
   display: flex;
-  
+
   .description {
     margin-left: 2%;
   }

@@ -84,7 +84,7 @@ const CategoryLight = () => {
           />
         ))}
       </div>
-    </div >
+    </div>
   );
 };
 
