@@ -41,7 +41,8 @@
   }
 }
 
-.group1, .group2 {
+.group1,
+.group2 {
   img {
     object-fit: cover;
     max-width: 311px;
@@ -104,10 +105,9 @@
   border-radius: 15px;
   padding: 20px;
   width: 45%;
-  margin: 10px;
 
   width: 500px;
-  height: 220px;
+  height: 170px;
 
   color: #e4e2dd;
   font-family: 'geometria', sans-serif;
@@ -116,9 +116,9 @@
 
 .sectionHeader {
   color: #cb53bb;
-  font-size: x-large;
   font-family: 'impact';
-  margin: 2% 0;
+  font-size: xxx-large;
+  margin: 2% 0 0 2%;
 }
 
 .feature {
@@ -133,7 +133,8 @@
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;
-  margin-left: 50%;
+  grid-column-end: 3;
+  margin-left: 100px;
   margin-top: 5%;
 
   align-content: center;
@@ -152,15 +153,12 @@
 
   display: flex;
   flex-direction: column;
-  margin-left: 30%;
+  margin-left: 100px;;
   margin-top: 20%;
 }
-
-  .sectionHeader {
-    font-size: xxx-large;
-  }
 
 .examplesList {
   color: #e4e2dd;
   font-size: x-large;
+  padding: 10px;
 }
