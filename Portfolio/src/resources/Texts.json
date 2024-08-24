@@ -1,4 +1,6 @@
 {
+    "SymbolColon": ":",
+    
     "WelcomeTitle": "Welcome to SFX by st juice",
     "Hello": "Hi, I'm {0}!",
     "Name": "Viktoriia (stjuice)",
@@ -31,12 +33,13 @@
 
     "Light": "Light",
     "LightDescription": "This section features small, simple, and easily achievable makeup effects, perfect for beginners or quick projects. These effects are often less time-consuming and require fewer materials",
+    "LightFeatures": "Features",
     "LightFeaturesBlood": "Fake Blood",
-    "LightFeaturesBloodDescription": "Fake Blood",
+    "LightFeaturesBloodDescription": "flow, splashes, Simple cuts and scrapes",
     "LightFeaturesPaint": "Aqua Paint",
-    "LightFeaturesPaintDescription": "Aqua Paint",
+    "LightFeaturesPaintDescription": "Quick face/neck paint designs",
     "LightFeaturesdecoration": "decoration",
-    "LightFeaturesdecorationDescription": "decoration",
+    "LightFeaturesdecorationDescription": "small ornaments are glued on the face/neck",
     "LightFor": "Ideal for",
     "LightForList": ["Kids", "beginners", "small projects"],
     "LightForConclusion": "Anyone who looking for a fun and easy transformation",

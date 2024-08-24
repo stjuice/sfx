@@ -1,25 +1,26 @@
 .light {
   display: grid;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
   gap: 0px;
   height: 100%;
-
 }
 
 .header {
   grid-row-start: 1;
   grid-row-end: 2;
 
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 7;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-left: 10%;
+  margin-right: 10%;
+  
   .title {
     font-size: 100px;
     color: #cb53bb;
@@ -33,21 +34,106 @@
   }
 }
 
-.images {
+.group1 {
   grid-row-start: 2;
-  grid-row-end: 5;
-
+  grid-row-end: 4;
   grid-column-start: 1;
+  grid-column-end: 4;
+
+  margin-left: 35px;
+  max-width: 230px;
+  max-height: 700px;
+  object-fit: cover;
+
+  display: flex;
+  transition: max-height 0.5s ease, grid-row 0.5s ease, grid-column 0.5s ease;
+}
+
+.group2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 7;
+
+  max-width: 230px;
+  max-height: 700px;
+  object-fit: cover;
+
+  display: flex;
+  transition: max-height 0.5s ease, grid-row 0.5s ease, grid-column 0.5s ease;
+}
+
+.image {
+  max-width: 230px;
+  max-height: 700px;
+  object-fit: cover;
+
+  display: flex;
+  transition: max-height 0.5s ease, grid-row 0.5s ease, grid-column 0.5s ease;
+}
+
+/* Shrink up animation for group1 */
+.shrinkUp {
+  max-height: 300px;
+  max-height: 700px;
+  object-fit: cover;
+  margin-left: 35px;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  display: flex;
+}
+
+/* Shrink down animation for group2 */
+.shrinkDown {
+  max-height: 300px;
+  max-height: 700px;
+  object-fit: cover;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
   grid-column-end: 7;
 
   display: flex;
-  justify-self: center;
-  margin-top: 3%;
+}
 
-  img {
-    max-width: 230px;
-    max-height: 700px;
-    object-fit: cover;
+img {
+  object-fit: cover;
+  max-width: 230px;
+  max-height: 700px;
+}
 
+
+.cardsContainer{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  margin-left: 10%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  width: 45%;
+  margin: 10px;
+
+  height: 250px;
+  width: 500px;
+
+  color: white;
+  font-family: 'geometria', sans-serif;
+}
+
+.feature {
+  display: flex;
+  
+  .description {
+    margin-left: 2%;
   }
 }
