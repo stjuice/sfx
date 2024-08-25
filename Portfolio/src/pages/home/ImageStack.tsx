@@ -6,7 +6,7 @@ const ImageStack = () => {
   const navigate = useNavigate();
   const images = [
     { src: 'resources/media/images/stack/1.png', link: '/category-light' },
-    { src: 'resources/media/images/stack/2.png', link: 'https://example.com/link2' },
+    { src: 'resources/media/images/stack/2.png', link: '/category-moderate' },
     { src: 'resources/media/images/stack/3.png', link: 'https://example.com/link3' },
   ];
 
