@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import styles from './Category.module.scss';
 import { textKeys as T } from 'components/text'
-import TextBlock from 'components/text/textBlock/TextBlock';
-import Image from 'components/media/image';
 import LightTemplate from './LightTemplate';
 
 const imagesGroup1 = [
