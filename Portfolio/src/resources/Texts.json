@@ -44,5 +44,19 @@
     "LightForList": ["Kids ⨀ ", "beginners ⨀ ", "small projects"],
     "LightForConclusion": "Anyone who looking for a fun and easy transformation",
     "LightThemeExamples": "theme examples",
-    "LightThemeExamplesList": ["elf ⨀ ", "doll ⨀ ", "clown ⨀ ", "witch ⨀ ", "fairy ⨀ ", "sugar skull ⨀ ", "vampire bite marks"]
+    "LightThemeExamplesList": ["elf ⨀ ", "doll ⨀ ", "clown ⨀ ", "witch ⨀ ", "fairy ⨀ ", "sugar skull ⨀ ", "vampire bite marks"],
+
+    "Moderate": "Moderate",
+    "ModerateDescription": "This section showcases makeup effects that are more detailed. These effects Can involve small or medium-sized prosthetics and more complex paint jobs. Perfect for those who are more adventurous and willing to push their creativity further.",
+    "ModerateFeatures": "Features",
+    "ModerateFeaturesBlood": "Realistic Wounds",
+    "ModerateFeaturesBloodDescription": "More intricate wound effects such as deep cuts, burns, or bruises",
+    "ModerateFeaturesPaint": "Prosthetics",
+    "ModerateFeaturesPaintDescription": "sillicone or foam prosthetics like horn, wound, bullet hole or other  creative applications",
+    "ModerateFeaturesdecoration": "Aqua Paint",
+    "ModerateFeaturesdecorationDescription": "more complex face/body paint designs",
+    "ModerateFor": "Ideal for",
+    "ModerateForConclusion": "those looking for a more dramatic look",
+    "ModerateThemeExamples": "theme examples",
+    "ModerateThemeExamplesList": ["Zombie ⨀ ", "witch ⨀ ", "devil ⨀ ", "monster ⨀ ", "fairy ⨀ ", "cinematographic character"]
 }
